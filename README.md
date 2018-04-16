@@ -1,4 +1,4 @@
-iHeart-Chrome-Extension
+Rover
 =======================
 
-Example of a Chrome Extension that communicates between every layers
+Firebase-powered chrome extension
