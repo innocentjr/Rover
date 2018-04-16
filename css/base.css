@@ -1,0 +1,24 @@
+.rover body{font:11px Arial, Helvetica, sans-serif; margin:0; padding:0; }
+.rover body *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Popup ///////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+#popupBox{padding:0px; width:500px; height:100%;}
+#popupBox h3{color:#FFFFFF; margin:0 0 5px 0; padding:0;}
+#popupBox ul{list-style:none; margin:0; padding:0;}
+#popupBox li{padding:0 0 5px 0; white-space:nowrap;}
+#popupBox li small{color:#777; display:block;s margin:3px 0 0 0;}
+#popupBox li a{color:#FFFFFF;}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Heart ///////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+#heartBox .heart{background:#EAECEF; border-left:0; border-radius:0 8px 8px 0; color:#fff; font-size:18px; padding:10px; text-align:center;}
+#heartBox .heart.active, #heartBox .heart:hover{color:#2D7DF6; cursor:pointer;}
+
+.btn,  .btn-primary {
+  background-color: #603FFF !important;
+}

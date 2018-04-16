@@ -1,0 +1,18 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/* iHeart //////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 	Last Edit: 03/18/18 9:28PM
+	By: Innocent Obi
+*/
+
+#iheart-container{top:20%; position:fixed; z-index:999999; padding: 0 0 0 0;}
+
+#iheart-container iframe{border:none !important; vertical-align:top; z-index:20; padding: 0 0 0 0;}
+
+#iheart-iframe-heart{height:50px; width:50px;}
+
+#iheart-iframe-comment{display:none; margin:-50px 0 0 -40px; width:300px; padding: 0 0 0 0; 
+	-webkit-transform:scale(0.70);
+-moz-transform:scale(0.70);
+-ms-transform:scale(0.70);
+transform:scale(0.70);}

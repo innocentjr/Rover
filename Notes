@@ -1,0 +1,48 @@
+//Differentiating the iframes
+chrome.extension.getURL('html/iframe/comment.html?view=comment');
+
+/*Messaging setuo
+Messages are passed simple object containing two properties:
+
+- Message
+- Data
+*/
+
+//Tell method: send the message with both properties
+tell('tell-something', {attribute:'a'. attribute:'b'});
+
+//When an iframe sends a message the current iframe view ID is also sent as a source property in data.
+tell('tell-parent-something', {source:'comment'});
+
+//When a message needs to be sent to a particular iframe, a view property
+//is added with teh right view ID in data. 
+tell('tell-to-an-iframe', {
+
+	view:'comment',
+
+	title:'Hello World!'
+
+})
+//if a message needs to be sent to all ifreame, used '*' wildcard.
+tell('tell-to-all-iframes', {view:'*', title:'foo bar'});
+ // -- if no view is specified it is the ContentScript/Background that should process message
+
+ ---Structure
+ Background
+ 	- tell-something
+ 	- listen-to-something
+
+ ContentScript
+ 	- tell-something
+ 	- lsiten-to-something
+
+ Iframe
+ 	- tell-something
+ 	- listen-to-something
+
+ Javascript:
+ 	- inspect.js 
+ 	- iframe/comment.js 
+ 	- inject.js 
+ 	- background.js
+
